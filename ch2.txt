@@ -1,0 +1,91 @@
+Conceptual
+1. For each of parts (a) through (d), indicate whether we would generally
+expect the performance of a fexible statistical learning method to be
+better or worse than an infexible method. Justify your answer.
+
+(a) The sample size n is extremely large, and the number of predictors p is small.
+You need a flexible method since you have a lot of variables to adjust miss and dismiss.
+
+(b) The number of predictors p is extremely large, and the number
+of observations n is small.
+
+(c) The relationship between the predictors and response is highly
+non-linear.
+You need an inflexible method since there are not much variables to adjust,
+
+(d) The variance of the error terms, i.e. σ2 = Var("), is extremely
+high.
+You need an inflexible method so you can verifiy that the noise has centered noise.
+
+2. Explain whether each scenario is a classifcation or regression problem, and indicate whether we are most interested in inference or prediction. Finally, provide n and p.
+
+(a) We collect a set of data on the top 500 frms in the US. For each
+frm we record proft, number of employees, industry and the
+CEO salary. We are interested in understanding which factors
+afect CEO salary.
+
+Regression, inference.
+p=3, n=500
+
+(b) We are considering launching a new product and wish to know
+whether it will be a success or a failure. We collect data on 20
+similar products that were previously launched. For each product we have recorded whether it was a success or failure, price
+charged for the product, marketing budget, competition price,
+and ten other variables.
+
+Classification, prediction.
+p=13 n=20
+
+(c) We are interested in predicting the % change in the USD/Euro
+exchange rate in relation to the weekly changes in the world
+stock markets. Hence we collect weekly data for all of 2012. For
+each week we record the % change in the USD/Euro, the %
+change in the US market, the % change in the British market,
+and the % change in the German market.
+
+Regression, prediction
+p=4, n=52
+
+
+3. We now revisit the bias-variance decomposition.
+(a) Provide a sketch of typical (squared) bias, variance, training error, test error, and Bayes (or irreducible) error curves, on a single plot, as we go from less fexible statistical learning methods
+towards more fexible approaches. The x-axis should represent
+the amount of fexibility in the method, and the y-axis should
+represent the values for each curve. There should be fve curves.
+Make sure to label each one.
+(b) Explain why each of the fve curves has the shape displayed in
+part (a).
+64 2. Statistical Learning
+4. You will now think of some real-life applications for statistical learning.
+(a) Describe three real-life applications in which classifcation might
+be useful. Describe the response, as well as the predictors. Is the
+goal of each application inference or prediction? Explain your
+answer.
+(b) Describe three real-life applications in which regression might
+be useful. Describe the response, as well as the predictors. Is the
+goal of each application inference or prediction? Explain your
+answer.
+(c) Describe three real-life applications in which cluster analysis
+might be useful.
+5. What are the advantages and disadvantages of a very fexible (versus
+a less fexible) approach for regression or classifcation? Under what
+circumstances might a more fexible approach be preferred to a less
+fexible approach? When might a less fexible approach be preferred?
+6. Describe the diferences between a parametric and a non-parametric
+statistical learning approach. What are the advantages of a parametric approach to regression or classifcation (as opposed to a nonparametric approach)? What are its disadvantages?
+7. The table below provides a training data set containing six observations, three predictors, and one qualitative response variable.
+Obs. X1 X2 X3 Y
+1 030 Red
+2 200 Red
+3 013 Red
+4 012 Green
+5 −101 Green
+6 111 Red
+Suppose we wish to use this data set to make a prediction for Y when
+X1 = X2 = X3 = 0 using K-nearest neighbors.
+(a) Compute the Euclidean distance between each observation and
+the test point, X1 = X2 = X3 = 0.
+(b) What is our prediction with K = 1? Why?
+(c) What is our prediction with K = 3? Why?
+(d) If the Bayes decision boundary in this problem is highly nonlinear, then would we expect the best value for K to be large or
+small? Why?
