@@ -48,13 +48,32 @@ p=4, n=52
 
 
 3. We now revisit the bias-variance decomposition.
+
 (a) Provide a sketch of typical (squared) bias, variance, training error, test error, and Bayes (or irreducible) error curves, on a single plot, as we go from less fexible statistical learning methods
 towards more fexible approaches. The x-axis should represent
 the amount of fexibility in the method, and the y-axis should
-represent the values for each curve. There should be fve curves.
+represent the values for each curve. There should be five curves.
 Make sure to label each one.
-(b) Explain why each of the fve curves has the shape displayed in
+
+This is the first plot in figure 2.12 adding the curveof training mse on figure 2.9.
+
+(b) Explain why each of the five curves has the shape displayed in
 part (a).
+
+Bias:
+Tends to be decreasing since real world problems tend to be more flexible and then it is necessary to use more flexible problem.s
+
+Variance:
+It always tends to increase since the most flexibility the curve depends more on the traning data and we have more variablity.
+
+Training error:
+It always tends to zero since the biggest the flexibility it approaches best the points.
+
+Test error:
+It has a U shape since at tje begging the training error is doing its job, until it starts the overffiting and then losses approximation to the test data.
+
+Bayes error curve:
+It is a constant that represents the noise that is not possible to predict with the model.
 
 
 
@@ -76,7 +95,7 @@ might be useful.
 
 
 5. What are the advantages and disadvantages of a very fexible (versus
-a less fexible) approach for regression or classifcation? Under what
+a less fexible) approach for regression or classification? Under what
 circumstances might a more fexible approach be preferred to a less
 fexible approach? When might a less fexible approach be preferred?
 
@@ -95,14 +114,22 @@ Obs. X1 X2 X3 Y
 6 1 1 1 Red
 Suppose we wish to use this data set to make a prediction for Y when
 X1 = X2 = X3 = 0 using K-nearest neighbors.
+
 (a) Compute the Euclidean distance between each observation and
 the test point, X1 = X2 = X3 = 0.
-1 3
-2 2
-3 3.16
-4 
+1 3 R
+2 2 R
+3 3.16 R
+4 2.23 G
+5 1.41 G
+6 1.73 R
 
 (b) What is our prediction with K = 1? Why?
+Green. The closest point is Green.
+
 (c) What is our prediction with K = 3? Why?
+Red. We have 1G 2R.
+
 (d) If the Bayes decision boundary in this problem is highly nonlinear, then would we expect the best value for K to be large or
 small? Why?
+Small. The biggest the value of K the boundary tends to be less flexible.
