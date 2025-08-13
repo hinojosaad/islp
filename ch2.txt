@@ -99,10 +99,15 @@ a less fexible) approach for regression or classification? Under what
 circumstances might a more fexible approach be preferred to a less
 fexible approach? When might a less fexible approach be preferred?
 
+In gneral a most flexible approach will give you better results in terms of the quality of the prediction but you will lose information about how each variable impacts in the result.
+Typically one prefer most rigidity when is interested on doing statistical inference and analizyng the relation with the independent variables and less rigidity when the objective is
+to have the best prediction as possible.
 
 6. Describe the diferences between a parametric and a non-parametric
-statistical learning approach. What are the advantages of a parametric approach to regression or classifcation (as opposed to a nonparametric approach)? What are its disadvantages?
+statistical learning approach. What are the advantages of a parametric approach to regression or classification (as opposed to a nonparametric approach)? What are its disadvantages?
 
+Parametric models made previous assumptions about the form of the function and non parametric non. Non parametric models tend to have better results in terms of the prediction 
+but there's a risk of overfitting the data.
 
 7. The table below provides a training data set containing six observations, three predictors, and one qualitative response variable.
 Obs. X1 X2 X3 Y
